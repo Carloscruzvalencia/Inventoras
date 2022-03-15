@@ -168,6 +168,23 @@ html, body {
 .gen-layout {
   width: 100vw;
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gen-layout .content-ly {
+  display: grid;
+  margin-right: 1vw;
+}
+.gen-layout .content-ly h2 {
+  justify-self: center;
+  align-self: center;
+  font-size: 3vw;
+  text-decoration: underline;
+}
+.gen-layout .content-ly p {
+  font-size: 1.8vw;
+  width: 50vw;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=custom.css.map */
