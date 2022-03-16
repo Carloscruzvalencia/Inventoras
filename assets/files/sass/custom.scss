@@ -13,5 +13,14 @@ body{
 ::-webkit-scrollbar{
     display: none
 }
+a{
+    margin-top: 1vh;
+    .btn-restart{
+        width: 11vw;
+        height: 7vh;
+        border-radius: 10px;
+        background-color: gray;
+    }
+}
 @import "components/landing";
 @import "components/layout"

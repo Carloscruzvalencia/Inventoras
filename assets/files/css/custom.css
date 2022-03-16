@@ -17,6 +17,16 @@ body {
   display: none;
 }
 
+a {
+  margin-top: 1vh;
+}
+a .btn-restart {
+  width: 11vw;
+  height: 7vh;
+  border-radius: 10px;
+  background-color: gray;
+}
+
 .landing {
   display: grid;
   width: 100vw;
@@ -220,7 +230,30 @@ body {
 }
 
 .section-2 {
+  background-color: #34757b;
   z-index: 3;
+  width: 20vw;
+  height: 0vh;
+  position: relative;
+  left: 45vw;
+  overflow: hidden;
+}
+
+.section-3 {
+  background-color: #97406a;
+  position: relative;
+  left: -100vw;
+}
+
+.section-4 {
+  background-color: white;
+}
+
+a {
+  margin-top: 1vh;
+  position: relative;
+  top: 3vh;
+  left: 46vw;
 }
 
 /*# sourceMappingURL=custom.css.map */
