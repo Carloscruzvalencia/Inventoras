@@ -7,19 +7,6 @@ document.addEventListener("DOMContentLoaded",function (event) {
 
         gsap.registerPlugin(ScrollTrigger);
 
-        // gsap.to(".an-bub", {
-        //     scrollTrigger: {
-        //         Trigger: "",
-        //         toggleActions:"restart resume reverse resume",
-        //         scrub: true,
-        //         start: "top",
-        //         end: 1000,
-        //         // markers:true,
-        //     },
-        //     scale:30,
-        //     y:700,
-        //     duration: 2,
-        // });
         gsap.to(".bub-fill", {
             scrollTrigger: {
                 Trigger: "",
@@ -30,20 +17,6 @@ document.addEventListener("DOMContentLoaded",function (event) {
             },
             fill: 'rgba(106, 76, 144, 1)'
         });
-        // gsap.to(".an-bub-2", {
-        //     scrollTrigger: {
-        //         Trigger: "",
-        //         toggleActions:"restart resume reverse resume",
-        //         scrub: true,
-        //         start: "1500vh",
-        //         end: "2000vh",
-        //         markers:true,
-        //     },
-        //     scale:30,
-        //     duration: 2,
-        //     // y:,
-        // });
-
         gsap.to(".img-1", {
             scrollTrigger: {
                 Trigger: "",
@@ -54,7 +27,7 @@ document.addEventListener("DOMContentLoaded",function (event) {
             },
             x:1000,
         });
-        gsap.to(".content-ly", {
+        gsap.to(".p-layout-animation", {
             scrollTrigger: {
                 Trigger: "",
                 toggleActions:"restart resume reverse resume",
@@ -72,7 +45,6 @@ document.addEventListener("DOMContentLoaded",function (event) {
                 end: "center 50%",
                 toggleActions: "play reverse restart reverse",
                 scrub: 0.4,
-                markers: true,
             },
         });
         
@@ -99,5 +71,58 @@ document.addEventListener("DOMContentLoaded",function (event) {
                 { y:0},
                 { y:2000,scale:0,},
             );
+        
+            let section2in = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".section-2",
+                    start: 1500,
+                    end: 2000,
+                    toggleActions: "play reverse restart reverse",
+                    scrub: true,
+                },
+            });
+            section2in
+                .fromTo(
+                    ".section-2",
+                    { y: 0,},
+                    { width: 1920,left:0,height:1000,}
+                );
 
+
+
+            let section3in = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".section-3",
+                    start: 2500,
+                    end: 3000,
+                    toggleActions: "play reverse restart reverse",
+                    scrub: true,
+                },
+            });
+            section3in
+                .fromTo(
+                    ".section-3",
+                    { y: 0,},
+                    { rotate:360,x:1920,}
+                );
+        gsap.to(".section-4", {
+            scrollTrigger: {
+                Trigger: "",
+                toggleActions:"restart resume reverse resume",
+                scrub: true,
+                start: 3500,
+                end: 4000,
+            },
+            backgroundColor:'rgba(41, 72, 121, 1)',
+        });
+        gsap.to(".section-5", {
+            scrollTrigger: {
+                Trigger: "",
+                toggleActions:"restart resume reverse resume",
+                scrub: true,
+                start: 4500,
+                end: 5000,
+            },
+            backgroundColor:'rgba(68, 149, 71, 1)',
+        });
     });
