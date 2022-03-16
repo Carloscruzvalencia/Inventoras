@@ -9,6 +9,10 @@ html, body {
   margin: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -163,6 +167,11 @@ html, body {
   height: 10vh;
   top: 75vh;
   left: 46.5vw;
+  z-index: 1;
+}
+
+.bub-fill {
+  fill: black;
 }
 
 .gen-layout {
@@ -170,6 +179,13 @@ html, body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.gen-layout img {
+  width: 25vw;
+  height: 55vh;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
 }
 .gen-layout .content-ly {
   display: grid;
@@ -185,6 +201,26 @@ html, body {
   font-size: 1.8vw;
   width: 50vw;
   text-align: justify;
+}
+
+.landing {
+  z-index: 1;
+}
+
+.section-1 {
+  color: white;
+  position: relative;
+  z-index: 100 !important;
+}
+.section-1 .img-1 {
+  margin-left: -50vw;
+}
+.section-1 .content-ly {
+  margin-left: 100vw;
+}
+
+.section-2 {
+  z-index: 3;
 }
 
 /*# sourceMappingURL=custom.css.map */
