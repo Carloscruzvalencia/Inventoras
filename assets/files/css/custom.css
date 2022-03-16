@@ -1,7 +1,16 @@
+* {
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -24,6 +33,194 @@ html, body {
   grid-area: 1/1;
   height: 100vh;
   width: 100vw;
+}
+
+.ld-bubbles {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  z-index: 1;
+}
+.ld-bubbles .bubble-1 {
+  width: 10vh;
+  height: 10vw;
+  grid-area: 1/1;
+  justify-self: start;
+  align-self: flex-start;
+  margin-top: -4vh;
+  margin-left: 1vh;
+  position: relative;
+  animation: bubble-st 3s linear infinite;
+}
+.ld-bubbles .bubble-2 {
+  width: 10vh;
+  height: 10vw;
+  grid-area: 2/2;
+  margin-top: -7vh;
+  margin-left: 3vw;
+  position: relative;
+  animation: bubble-rv 3s linear infinite;
+}
+.ld-bubbles .bubble-3 {
+  width: 10vh;
+  height: 10vw;
+  grid-area: 2/6;
+  justify-self: center;
+  margin-top: 5vh;
+  position: relative;
+  animation: bubble-rv 3s linear infinite;
+}
+.ld-bubbles .bubble-4 {
+  width: 15vw;
+  height: 25vh;
+  grid-area: 5/1/5/3;
+  justify-self: center;
+  position: relative;
+  animation: bubble-st 3s linear infinite;
+}
+.ld-bubbles .bubble-5 {
+  width: 15vw;
+  height: 25vh;
+  grid-area: 1/4/1/6;
+  justify-self: center;
+  position: relative;
+  animation: bubble-st 3s linear infinite;
+}
+.ld-bubbles .bubble-6 {
+  width: 15vw;
+  height: 25vh;
+  grid-area: 4/6/6/6;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  animation: bubble-rv 3s linear reverse infinite;
+}
+@keyframes bubble-st {
+  0% {
+    top: 0vh;
+    left: 0vw;
+  }
+  50% {
+    top: 5vh;
+    left: -3vw;
+  }
+  100% {
+    top: 0vh;
+    left: 0vw;
+  }
+}
+@keyframes bubble-rv {
+  0% {
+    top: 0vh;
+    left: 0vw;
+  }
+  50% {
+    top: 5vh;
+    left: 3vw;
+  }
+  100% {
+    top: 0vh;
+    left: 0vw;
+  }
+}
+
+.sworm {
+  width: 80vw;
+  height: 18vh;
+  top: 49vh;
+  left: 10vw;
+  background-color: #792959;
+  border-left: solid black 0.5vw;
+  z-index: 1;
+  position: absolute;
+  animation: br-an 2s steps(10, end) forwards reverse, br-blink 0.9s infinite linear;
+}
+@keyframes br-an {
+  0% {
+    left: 89vw;
+    width: 0vw;
+  }
+}
+@keyframes br-blink {
+  to {
+    border-left: solid white 0.5vw;
+  }
+}
+
+.scroll-im {
+  position: absolute;
+  z-index: 1;
+  top: 88vh;
+  left: 47vw;
+  width: 10vw;
+  height: 10vh;
+}
+
+.an-bub {
+  position: absolute;
+  z-index: 1;
+  width: 10vw;
+  height: 10vh;
+  top: 75vh;
+  left: 46.5vw;
+  z-index: 1;
+}
+
+.bub-fill {
+  fill: black;
+}
+
+.gen-layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gen-layout img {
+  width: 25vw;
+  height: 55vh;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+}
+.gen-layout .content-ly {
+  display: grid;
+  margin-right: 1vw;
+}
+.gen-layout .content-ly h2 {
+  justify-self: center;
+  align-self: center;
+  font-size: 3vw;
+  text-decoration: underline;
+}
+.gen-layout .content-ly p {
+  font-size: 1.8vw;
+  width: 50vw;
+  text-align: justify;
+}
+
+.landing {
+  z-index: 1;
+}
+
+.section-1 {
+  color: white;
+  position: relative;
+  z-index: 100 !important;
+}
+.section-1 .img-1 {
+  margin-left: -50vw;
+}
+.section-1 .content-ly {
+  margin-left: 100vw;
+}
+
+.section-2 {
+  z-index: 3;
 }
 
 /*# sourceMappingURL=custom.css.map */

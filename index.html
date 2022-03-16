@@ -1,20 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/files/css/custom.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="assets/files/js/app.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header></header>
     <main>
-        <section class="landing">
+        <section class="landing" id="landing-link">
             <video src="assets/media/video/ink-1.mov" class="ld-video" autoplay muted loop></video>
             <img src="assets/media/img/backgrounds/Group 42.png" alt="" class="ld-back">
+
+            <div class="ld-bubbles">
+                <img src="assets/media/img/decorations/big-bubble.svg" class="bubble-1" alt="">
+                <img src="assets/media/img/decorations/big-bubble.svg" class="bubble-2" alt="">
+                <img src="assets/media/img/decorations/big-bubble.svg" class="bubble-3" alt="">
+                <img src="assets/media/img/decorations/big-bubble.svg" class="bubble-4" alt="">
+                <img src="assets/media/img/decorations/big-bubble.svg" class="bubble-5" alt="">
+                <img src="assets/media/img/decorations/big-bubble.svg" class="bubble-6" alt="">
+                <div class="sworm"></div>
+            </div>
+            <img src="assets/media/img/components/scroll-dow.png" class="scroll-im" alt="">
+            <svg class="an-bub an-bub-2" width="157" height="157" viewBox="0 0 157 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="78.5" cy="78.5" r="78.5" fill="black" class="bub-fill" />
+            </svg>
+
         </section>
+
+        <section class="gen-layout section-1" id="section-id-1">
+            <img src="assets/media/img/person/evelyn.jpg" alt="" class="img-1">
+            <div class="content-ly">
+                <h2>Evelyn Brezin</h2>
+                <p>Madre de los procesadores de texto.
+                    y desarrolladora del primer sistema computerizado de reservas de billetes de líneas aéreas para
+                    United
+                    Airlines.
+                    <br><br>
+                    En 1953, creó el que se considera el primer ordenador de oficina.</p>
+            </div>
+
+        </section>
+
+        <section class="gen-layout section-2" id="section-id-2">
+            <img src="assets/media/img/person/lamarr.jpeg" alt="">
+            <div class="content-ly">
+                <h2>Hedy Lamar</h2>
+                <p>inventó y patentó la primera versión del espectro ensanchado que permitiría las comunicaciones
+                    inalámbricas de larga distancia, y por ello es considerada precursora del Wifi y el Bluetooth.</p>
+            </div>
+        </section>
+
+        <section class="gen-layout" id="section-id-3">
+            <img src="assets/media/img/person/hopper.jpg" alt="">
+            <div class="content-ly">
+                <h2>Grace Murray Hopper</h2>
+                <p>fue una científica de la computación y militar estadounidense con grado de contraalmirante. Fue
+                    pionera
+                    en el mundo de las ciencias de la computación y la primera programadora que utilizó el Mark I. Entre
+                    las
+                    décadas de los 50 y 60 desarrolló el primer compilador para un lenguaje de programación</p>
+            </div>
+        </section>
+
+        <section class="gen-layout" id="section-id-4">
+            <img src="assets/media/img/person/maxresdefault-1.jpg" alt="">
+            <div class="content-ly">
+                <h2>Stephanie Shirley</h2>
+                <p>Es una empresaria informática y filántropa británica. En 1962 fundó la empresa de software Freelance
+                    Programmers Ltd, convirtiéndose en la primera mujer en montar una empresa de programación</p>
+            </div>
+
+        </section>
+
+        <section class="gen-layout" id="section-id-5">
+            <img src="assets/media/img/person/jude.jpg" alt="">
+            <div class="content-ly">
+                <h2>Jude Milho</h2>
+                <p>Era una famosa hacker y defensora de los derechos personales en internet. Acuñó el término ciberpunk,
+                    y
+                    fue miembro de la asociación Computer Professionals for Social Responsibility.
+
+                </p>
+            </div>
+
+        </section>
+        <a href="#landing-link">restart</a>
     </main>
     <footer></footer>
 </body>
+
 </html>
