@@ -35,8 +35,6 @@ lenguajes/frameworks usados
 ## Vista previa del proyecto
 <img src="project-preview.gif" aling="center"></img>
 
-## Requisitos
-
 ## Licencia
 Este proyecto está bajo la Licencia (MIT) - mira el archivo <a href="https://github.com/Carloscruzvalencia/Inventoras/blob/main/LICENSE.md">LICENSE.md</a>  para mas detalles
 
