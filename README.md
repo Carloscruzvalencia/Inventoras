@@ -1,4 +1,4 @@
-# Tarjetas de usuario 
+# inventoras
 
 Diseño creado en <a href="https://www.figma.com/file/kP0SJhf4iDDa9kAzsz1LM1/Github-projects?node-id=0%3A1">figma</a> por Carlos cruz valencia
 
